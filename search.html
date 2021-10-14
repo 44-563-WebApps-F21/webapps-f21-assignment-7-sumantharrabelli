@@ -4,7 +4,7 @@
   <title>Assignment 07</title>
   <h3>Animal Hunt by Arrabelli Sumanth</h3>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale-1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
@@ -12,99 +12,146 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
   integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </head>
-<body style="margin-left: 30px;margin-right: 30px;"> 
+<body> 
 
   <p style = color:darkred; padding:3px;>Click on the squares to search for wild life</p>
   <p id = "tries" style = color:darkviolet; padding:3px; >Number of tries is zero</p>
-  <p id ="Distance" style = color:darkgoldenrod ; padding:3px;> Distance is unknown</p>
+  <p id ="distance" style = color:darkgoldenrod ; padding:3px;> Distance is unknown</p>
 
   
   <div class="container">
     <div class="row">
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-1" onclick="check(0)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-2" onclick="check(1)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-3" onclick="check(2)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-4" onclick="check(3)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-5" onclick="check(4)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-6" onclick="check(5)"></img>
         </div>   
     </div>
     <div class="row">
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-7" onclick="check(6)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-8" onclick="check(7)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-9" onclick="check(8)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-10" onclick="check(9)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-11" onclick="check(10)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-12" onclick="check(11)"></img>
         </div>   
      
     </div>
     <div class="row">
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-13" onclick="check(12)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-14" onclick="check(13)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-15" onclick="check(14)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-16" onclick="check(15)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-17" onclick="check(16)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-18" onclick="check(17)"></img>
         </div>   
       
     </div>
     <div class="row">
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-19" onclick="check(18)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-20" onclick="check(19)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-21" onclick="check(20)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-22" onclick="check(21)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-23" onclick="check(22)"></img>
         </div>  
         <div class="col-sm-2">
-            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant"></img>
+            <img src ="plant.jpg" width = 200 ; height = 200; alt = "Image Plant" id="image-24" onclick="check(23)"></img>
         </div>   
       
     </div>
-
+    <script>
+        let ids = ["image-1", "image-2", "image-3", "image-4", "image-5", "image-6", "image-7", "image-8", "image-9", "image-10", "image-11", "image-12", "image-13", "image-14", "image-15", "image-16", "image-17", "image-18", "image-19", "image-20", "image-21", "image-22", "image-23", "image-24"]
+        tirecount = 0
+        animalLocation = 13
+        clicks = 1
+    
+        function check(position) {
+            id = ids[position]
+            if (position == animalLocation) {
+                document.getElementById(id).src ="animal.jpg"
+            }
+            out = document.getElementById("tries")
+            out.innerHTML = "Number of tries is " + clicks
+            clicks += 1
+           distance(position, animalLocation)
+        }
+    
+        function distance(position, animalLocation) {
+            row = 0
+            column = 0
+            count = 0
+            rowL = 0
+            columnL = 0
+            lcount = 0
+            id2 = ids[position]
+            for (i = 0; i < 4; i++) {
+                for (j = 0; j < 6; j++) {
+                    if (id2 == ids[count]) {
+                        row = i
+                        column = j
+                    }
+                    count += 1
+                }
+            }
+            for (i = 0; i < 4; i++) {
+                for (j = 0; j < 6; j++) {
+                    if (ids[animalLocation] == ids[lcount]) {
+                        rowL = i
+                        columnL = j
+                    }
+                    lcount += 1
+                }
+            }
+            horizantaldistance = Math.abs(column - columnL)
+            verticalDistance = Math.abs(row - rowL)
+            actualdistance = Math.max(horizantaldistance, verticalDistance)
+            ret = document.getElementById("distance")
+            ret.innerHTML = "Distance is "+ actualdistance
+        }
+    </script>
 </body>
 </html>
-
-
