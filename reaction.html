@@ -41,6 +41,9 @@
     <button type="button" class="btn btn-primary" onclick="recordReact()">React Now</button>
     <script>
         myTime = undefined
+        max = 23 
+        min = 0
+        i = Math.floor(Math.random()*(max-min +1)+min)
         function startTime() {
             for (i = 0; i < 4; i++) {
                 setTimeout(function () {
